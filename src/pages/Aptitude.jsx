@@ -126,9 +126,9 @@ function Aptitude() {
         total: questions.length,
       };
 
-      // 🚀 Send the data straight to your Express Server
-      fetch("http://localhost:5000/api/results", {
-        method: "POST",
+      // 🚀 Send the data to deployed backend
+fetch("https://mockmate-backend-h3dz.onrender.com/api/results", {
+  method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(resultData),
       })

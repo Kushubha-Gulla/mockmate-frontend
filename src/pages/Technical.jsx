@@ -127,7 +127,7 @@ function Technical() {
             {submitted && currentQuestion === questions.length - 1 && (
               <button onClick={() => {
                 const resultData = { type: "technical", score: score, total: questions.length };
-                fetch("http://localhost:5000/api/results", {
+                fetch("https://mockmate-backend-h3dz.onrender.com/api/results", {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
                   body: JSON.stringify(resultData),

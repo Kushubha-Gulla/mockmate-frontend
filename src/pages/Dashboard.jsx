@@ -6,7 +6,7 @@ function Dashboard() {
 
   // 🔄 Fetch real live data metrics from your backend database on initialization
   useEffect(() => {
-    fetch("http://localhost:5000/api/results")
+   fetch("https://mockmate-backend-h3dz.onrender.com/api/results")
       .then((res) => res.json())
       .then((data) => {
         setResults(data);
